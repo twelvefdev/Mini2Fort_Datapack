@@ -1,0 +1,11 @@
+{
+  "function": "minecraft:set_enchantments",
+  "tag": {},
+  "enchantments": {
+    "minecraft:infinity": 1,
+    "minecraft:power": 4,
+    "minecraft:flame": 1
+  },
+  "add": false,
+  "conditions": []
+}

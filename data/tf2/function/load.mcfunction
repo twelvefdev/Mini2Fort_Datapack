@@ -1,0 +1,2 @@
+# load tellraw on start map/datapack, to get the tf2 vibe and tell the admin it works
+tellraw @a ["",{"text":"➡","bold":true,"color":"gold"},{"text":" You're on your way to: ","bold":true,"color":"yellow"},{"text":"2Fort","bold":true,"color":"white"},{"text":"\n","bold":true},{"text":" ➡","bold":true,"color":"gold"},{"text":" ","bold":true,"color":"white"},{"text":"Map by","color":"white"},{"text":" ","bold":true,"color":"white"},{"text":"twelvef","color":"gold"}]

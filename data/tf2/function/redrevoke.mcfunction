@@ -1,0 +1,2 @@
+execute at @a run playsound sekta.buffcooldown player @a[advancements={tf2:red_buffbanner=true}, team=RED]
+advancement revoke @a[advancements={tf2:red_buffbanner=true}, team=RED] from tf2:red_buffbanner

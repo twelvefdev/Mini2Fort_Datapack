@@ -1,0 +1,7 @@
+team modify BLU prefix ""
+execute if entity @p[x=32142.002, y=75.062, z=149.446, team=BLU, tag=scout, tag=!DontSay] run tellraw @a ["",{"text":"ⓘ ","color":"yellow"},{"selector":"@p[x=32142.002, y=75.062, z=149.446, team=BLU]"}," joined ",{"text":"BLU","bold":true,"color":"blue"},{"text":" ","bold":true},"as ",{"text":"Scout","color":"blue","bold":true},"."]
+execute if entity @p[x=32142.002, y=75.062, z=149.446, team=BLU, tag=soldier, tag=!DontSay] run tellraw @a ["",{"text":"ⓘ ","color":"yellow"},{"selector":"@p[x=32142.002, y=75.062, z=149.446, team=BLU]"}," joined ",{"text":"BLU","bold":true,"color":"blue"},{"text":" ","bold":true},"as ",{"text":"Soldier","color":"blue","bold":true},"."]
+execute if entity @p[x=32142.002, y=75.062, z=149.446, team=BLU, tag=demoknight, tag=!DontSay] run tellraw @a ["",{"text":"ⓘ ","color":"yellow"},{"selector":"@p[x=32142.002, y=75.062, z=149.446, team=BLU]"}," joined ",{"text":"BLU","bold":true,"color":"blue"},{"text":" ","bold":true},"as ",{"text":"Demoknight","color":"blue","bold":true},"."]
+execute if entity @p[x=32142.002, y=75.062, z=149.446, team=BLU, tag=huntsman, tag=!DontSay] run tellraw @a ["",{"text":"ⓘ ","color":"yellow"},{"selector":"@p[x=32142.002, y=75.062, z=149.446, team=BLU]"}," joined ",{"text":"BLU","bold":true,"color":"blue"},{"text":" ","bold":true},"as ",{"text":"Huntsman","color":"blue","bold":true},"."]
+team modify BLU prefix "\u00A79\u00A7l[BLU] "
+tag @p[x=32142.002, y=75.062, z=149.446, team=BLU] add DontSay

@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:goat_horn",
+      "count": 1
+    },
+    "title": "red_buffbanner",
+    "description": "custom",
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "parent": "minecraft:adventure/root",
+  "criteria": {
+    "used_goat_horn": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": "minecraft:goat_horn",
+          "components": {
+            "minecraft:instrument": "minecraft:ponder_goat_horn"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "tf2:redbuff"
+  },
+  "sends_telemetry_event": true
+}

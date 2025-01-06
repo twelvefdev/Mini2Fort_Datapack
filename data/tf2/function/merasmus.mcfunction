@@ -1,0 +1,3 @@
+execute at @a run playsound minecraft:sekta.mapbonus voice @p
+summon dragon_fireball 31989 89 86 {CustomName:'[{"text":"mapbonus"}]',Glowing:1b,Invulnerable:1b,NoAI:1b,NoGravity:1b,PersistenceRequired:1b,Silent:1b}
+tellraw @a ["",{"text":"ⓘ","color":"yellow"},{"text":" ","bold":true,"color":"yellow"},{"text":"The ","color":"white"},{"text":"gargoyle is here","color":"green"},{"text":"! First one to get it, earns three points.","color":"white"}]

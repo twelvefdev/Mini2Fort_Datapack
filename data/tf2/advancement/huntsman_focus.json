@@ -1,0 +1,38 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:barrel",
+      "count": 1
+    },
+    "title": "huntsman_focus",
+    "description": "test_for_consume",
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "parent": "minecraft:adventure/root",
+  "criteria": {
+    "huntsman_hunt": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "player": {
+          "nbt": "{Tags:[\"huntsman\"]}"
+        },
+        "item": {
+          "items": "minecraft:golden_apple",
+          "components": {
+            "minecraft:use_cooldown": {
+              "seconds": 21,
+              "cooldown_group": "tf2_apple"
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "tf2:hunt"
+  },
+  "sends_telemetry_event": true
+}

@@ -1,0 +1,26 @@
+# blu huntsman
+
+tag @p[x=32142.002, y=75.062, z=149.446, team=BLU] add huntsman
+function tf2:blu_msg
+
+give @p[x=32142.002, y=75.062, z=149.446, team=BLU] bow[custom_name='["",{"text":"Fortified Compound","italic":false,"color":"blue"}]',lore=['["",{"text":"No worries. - The Sniper","italic":false}]'],enchantments={levels:{infinity:1,power:4}},unbreakable={},use_cooldown={seconds:2,cooldown_group:tf2_bow}]
+item replace entity @p[x=32142.002, y=75.062, z=149.446, team=BLU] weapon.offhand with spyglass[custom_name='["",{"text":"Zoom","italic":false,"color":"red"}]',lore=['["",{"text":"Zoom in at your enemies. Or out.","italic":false}]']]
+item replace entity @p[x=32142.002, y=75.062, z=149.446, team=BLU] container.27 with arrow[custom_name='["",{"text":"Huntsman\'s Arrows","italic":false,"color":"blue"}]',lore=['["",{"text":"Every true camper needs this.","italic":false}]']] 1
+give @p[x=32142.002, y=75.062, z=149.446, team=BLU] iron_sword[custom_name='["",{"text":"Shahanshah","italic":false,"color":"blue"}]',lore=['["",{"text":"It has been used to topple empires,","italic":false}]','["",{"text":"conquer continents and cause untold havoc all over the world.","italic":false}]','["",{"text":"— Shahanshah publicity blurb","italic":false}]'],enchantments={levels:{knockback:1,sharpness:2}},unbreakable={}]
+give @p[x=32142.002, y=75.062, z=149.446, team=BLU] golden_apple[custom_name='["",{"text":"Cozy Camper\'s Apple","italic":false,"color":"blue"}]',lore=['["",{"text":"Gains you FOCUS. Which makes your arrows flame for eight seconds.","italic":false}]'],consumable={can_always_eat:1b,on_consume_effects:[{type:apply_effects,effects:[{id:bad_omen,duration:180,show_particles:0b,show_icon:0b}]},{type:remove_effects,effects:[absorption,regeneration]}],nutrition:1,saturation:1},use_cooldown={seconds:21,cooldown_group:tf2_apple}] 8
+give @p[x=32142.002, y=75.062, z=149.446, team=BLU] potion[potion_contents={custom_color:16701501},custom_name='["",{"text":"Self-Made Heal","italic":false,"color":"yellow"}]',lore=['["",{"text":"The Cozy Camper\'s self-made \'drink\'..?","italic":false,"color":"gold"}]','["",{"text":"Three second resistance & ten seconds regeneration.","italic":false}]'],enchantment_glint_override=false,consumable={consume_seconds:1.8,animation:drink,sound:"entity.generic.drink",has_consume_particles:0b,on_consume_effects:[{type:apply_effects,effects:[{id:regeneration,duration:220,amplifier:0,show_particles:0b},{id:resistance,duration:70,amplifier:1,show_particles:0b,show_icon:0b}]},{type:play_sound,sound:"entity.player.hurt_freeze"}],nutrition:1,saturation:1},use_cooldown={seconds:16,cooldown_group:jarate},entity_data={id:potion,Invisible:1b},hide_additional_tooltip={}] 5
+
+item replace entity @p[x=32142.002, y=75.062, z=149.446, team=BLU] armor.head with minecraft:leather_helmet[minecraft:lore=['"Batter up! — The Scout"'],minecraft:enchantments={levels:{binding_curse:1,protection:1}},minecraft:unbreakable={},minecraft:custom_name='"Batter\'s Helmet"',minecraft:dyed_color={rgb:3949738,"color":"dark_red"}]
+item replace entity @p[x=32142.002, y=75.062, z=149.446, team=BLU] armor.chest with minecraft:leather_chestplate[minecraft:lore=['"How\'s it feel, wimp? — The Scout"'],minecraft:enchantments={levels:{binding_curse:1,protection:2}},minecraft:unbreakable={},minecraft:custom_name='"Thermal Tracker"',minecraft:dyed_color={rgb:3949738,"color":"dark_red"}]
+item replace entity @p[x=32142.002, y=75.062, z=149.446, team=BLU] armor.legs with minecraft:leather_leggings[minecraft:lore=['"Got da ball back! — The Scout"'],minecraft:enchantments={levels:{binding_curse:1,protection:2}},minecraft:unbreakable={},minecraft:custom_name='"Transparent Trousers"',minecraft:dyed_color={rgb:3949738,"color":"dark_red"}]
+item replace entity @p[x=32142.002, y=75.062, z=149.446, team=BLU] armor.feet with minecraft:leather_boots[minecraft:lore=['"Hey, look at my feet! — The Scout"'],minecraft:enchantments={levels:{binding_curse:1,protection:2}},minecraft:unbreakable={},minecraft:custom_name='"Buck Turner All-Stars"',minecraft:dyed_color={rgb:3949738,"color":"dark_red"}]
+give @p[x=32142.002, y=75.062, z=149.446, team=BLU] potion[potion_contents={custom_color:3949738,custom_effects:[{id:instant_health,duration:1,amplifier:0,show_particles:0b,show_icon:0b}]},custom_name='["",{"text":"Bottle o\' Healing","italic":false,"color":"blue"}]',lore=['["",{"text":"Heals you.","italic":false}]','["",{"text":"Each use, three seconds of cooldown.","italic":false}]'],consumable={sound:"entity.generic.drink",has_consume_particles:0b,on_consume_effects:[{type:play_sound,sound:"entity.player.teleport"}],nutrition:1,saturation:1},use_cooldown={seconds:3,cooldown_group:tf2_heal}] 28
+
+stopsound @p[x=32142.002, y=75.062, z=149.446, team=BLU] music minecraft:sekta.menu
+execute if block 31979 72 70 minecraft:slime_block run setblock 31979 72 70 minecraft:redstone_block
+forceload add 31993 57 31908 102
+playsound minecraft:sekta.bluteam voice @p[x=32142.002, y=75.062, z=149.446, team=BLU] 32013 97 86
+tp @p[x=32142.002, y=75.062, z=149.446, team=BLU] 32013 97 86
+
+# lobby
+setblock 32091 74 108 minecraft:redstone_block

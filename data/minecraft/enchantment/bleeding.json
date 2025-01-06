@@ -1,0 +1,39 @@
+{
+  "description": "Bleeding",
+  "supported_items": "#minecraft:enchantable/trident",
+  "weight": 1,
+  "max_level": 1,
+  "min_cost": {
+    "base": 1,
+    "per_level_above_first": 1
+  },
+  "max_cost": {
+    "base": 1,
+    "per_level_above_first": 1
+  },
+  "anvil_cost": 1,
+  "slots": [
+    "any"
+  ],
+  "effects": {
+    "minecraft:damage": [],
+    "minecraft:post_attack": [
+      {
+        "enchanted": "attacker",
+        "affected": "victim",
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "tf2:bleed"
+        }
+      }
+    ],
+    "minecraft:attributes": [
+      {
+        "id": "attack_damage",
+        "attribute": "minecraft:attack_damage",
+        "amount": -100,
+        "operation": "add_value"
+      }
+    ]
+  }
+}
