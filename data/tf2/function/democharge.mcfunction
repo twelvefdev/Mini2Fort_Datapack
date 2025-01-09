@@ -16,5 +16,6 @@ execute at @a[tag=demoknight, tag=!charged, nbt={Inventory:[{Slot:-106b,id:"mine
 execute at @a[tag=demoknight, tag=!charged, nbt={Inventory:[{Slot:-106b,id:"minecraft:shield"}]}] run effect give @s minecraft:strength 2 2 true
 
 execute at @a[tag=demoknight, tag=!charged, nbt={Inventory:[{Slot:-106b,id:"minecraft:shield"}]}] run tag @s add charged
+execute at @a[tag=demoknight, tag=!charged, nbt={SelectedItem:{id:"minecraft:shield"}}] run tag @s add charged
 
 schedule function tf2:demorevoke 15s
